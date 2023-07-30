@@ -1,0 +1,46 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 2%;
+} 
+.grid-column {
+  min-width: 100%;
+}
+.grid-column {
+  display: flex;
+  flex-direction: column;
+}
+.grid-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+.height1 {
+  aspect-ratio: 31 / 57; 
+  padding-bottom: 10%;
+}
+.height2 { 
+  aspect-ratio: 68 / 38; 
+  padding-bottom: 5%;
+}
+.height3 { 
+  aspect-ratio: 68 / 79; 
+  padding-bottom: 5%;
+  flex: 1 1 auto; 
+}
+.img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.img-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
